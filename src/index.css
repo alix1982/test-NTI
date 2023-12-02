@@ -5,9 +5,22 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* overflow-y: hidden; */
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* @import url(vendor/normalize.css); */
+@import url(fonts/Roboto/roboto.css);
+@import url(components/header/header.css);
+@import url(components/bestProducts/bestProducts.css);
+@import url(components/catalog/catalog.css);
+@import url(components/catalog/card/card.css);
+@import url(components/advantages/advantages.css);
+@import url(components/news/news.css);
+@import url(components/contactsAndRequest/contactsAndRequest.css);
+@import url(components/footer/footer.css);

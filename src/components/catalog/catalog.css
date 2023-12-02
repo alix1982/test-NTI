@@ -1,0 +1,244 @@
+.catalog__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 155px 13.5vw 180px 13.5vw;
+    padding: 0;
+}
+.catalog__pointFirst {
+    width: 31%;
+    margin-left: 5px;
+}
+.catalog__heading {
+    width: 83%;
+    text-align: left;
+    margin: 0 0 35px 0;
+    color: #292D32;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; 
+}
+.catalog__text {
+    width: 83%;
+    text-align: left;
+    margin: 0 0 46px 0;
+    color: #838383;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: 0.7px;
+}
+.catalog__arrow {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+.catalog__imgArrow {
+    width: 55px;
+    height: 55px;
+}
+.catalog__textArrow {
+    margin-left: 12px;
+    color: #292D32;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.catalog__point {
+    width: 31.4%;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    display: grid;
+    grid-template-columns: 9.1% 28px 1fr;
+    grid-template-rows: 78px 186px 29px 38px 40px;
+}
+.catalog__pointEven {
+    background-color: #F9F9F9;
+}
+.catalog__pointId {
+    margin: 0;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+    align-self: end;
+    color: #292D32;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 150%;
+}
+.catalog__pointImg {
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+.catalog__pointImg1 {
+    width: calc(100% - 25px);
+    height: calc(100% - 19px);
+    object-fit: contain;
+    margin: -10px 13px 29px 12px;
+}
+.catalog__pointImg2 {
+    width: calc(100% - 173px);
+    height: calc(100% - 20px);
+    object-fit: contain;
+    margin: -21px 58px 41px 115px;
+}
+.catalog__pointImg3 {
+    width: calc(100% - 103px);
+    height: calc(100% - 126px);
+    object-fit: contain;
+    margin: 81px 52px 46px 51px;
+}
+.catalog__pointImg4 {
+    width: calc(100% - 151px);
+    height: calc(100% - 105px);
+    object-fit: contain;
+    margin: 59px 76px 46px 75px;
+}
+.catalog__pointImg5 {
+    width: calc(100% - 117px);
+    height: calc(100% - 51px);
+    object-fit: contain;
+    margin: 38px 30px 13px 87px;
+}
+.catalog__pointCounter {
+    margin: 0;
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+    justify-self: start;
+    color: #838383;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 133.687%;
+}
+.catalog__pointHeading {
+    margin: 0;
+    width: calc(100% - 10px);
+    padding-right: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    text-align: left;
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    justify-self: start;
+    color: #292D32;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+@media screen and (max-width: 1890px) {
+    .catalog__point {
+        width: 31%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .catalog__list {
+        gap: 22px;
+        margin: 164px 15px 180px 15px;
+    }
+    .catalog__point {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .catalog__list {
+        flex-wrap: wrap;
+        margin: 115px 10px 125px 10px;
+    }
+    .catalog__pointFirst {
+        width: 100%;
+    }
+    .catalog__heading {
+        width: 72.2%;
+        margin: 0 0 20px 0;
+        font-size: 30px;
+        line-height: 120%;
+        letter-spacing: 0.6px;
+    }
+    .catalog__text {
+        width: 97.2%;
+        margin: 0 0 35px 0;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+
+    }
+    .catalog__arrow {
+        margin: 0 0 20px 0;
+    }
+    .catalog__imgArrow {
+        width: 45px;
+        height: 45%;
+    }
+    .catalog__textArrow {
+        margin-left: 15px;
+        font-size: 15px;
+    }
+    .catalog__point {
+        width: 100%;
+        background-color: #eeeeee;
+        grid-template-columns: 5.8% 22px 1fr;
+        grid-template-rows: 50px 170px 19px 30px 20px;
+    }
+    .catalog__pointEven {
+        background-color: #eeeeee;
+    }
+    .catalog__pointFirst {
+        grid-template-rows: 50px 156px 19px 30px 20px;
+    }
+    .catalog__pointId {
+        font-size: 20px;
+    }
+    .catalog__pointImg {
+        grid-column: 1 / 4;
+        grid-row: 1 / 3;
+    }
+    .catalog__pointImg1 {
+        width: calc(100% - 43px);
+        height: calc(100% - 29px);
+        margin: 15px 22px 14px 21px;
+    }
+    .catalog__pointImg2 {
+        width: calc(100% - 135px);
+        height: calc(100% - 25px);
+        margin: 10px 36px 5px 99px;
+    }
+    .catalog__pointImg3 {
+        width: calc(100% - 81px);
+        height: calc(100% - 113px);
+        margin: 63px 41px 50px 40px;
+    }
+    .catalog__pointImg4 {
+        width: calc(100% - 119px);
+        height: calc(100% - 97px);
+        margin: 46px 60px 51px 59px;
+    }
+    .catalog__pointImg5 {
+        width: calc(100% - 92px);
+        height: calc(100% - 53px);
+        margin: 30px 24px 23px 68px;
+    }
+    .catalog__pointCounter {
+        margin-left: 5px;
+        font-size: 15px;
+        letter-spacing: 0.7px;
+    }
+    .catalog__pointHeading {
+        font-size: 20px;
+        margin-left: 4px;
+        letter-spacing: 0.3px;
+    }
+}

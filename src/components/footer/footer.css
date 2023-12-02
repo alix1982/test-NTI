@@ -1,0 +1,212 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 51px 0 40px 0;
+}
+.footer__main {
+    width: calc(100% - 27vw);
+    padding: 0 0 50px 0;
+    margin: 0 13.5vw;
+    display: flex;
+    align-items: flex-start;
+    gap: 176px;
+    border-bottom: 1px solid #E5E5E5;
+    background-image: url('../../images/footer/bgFooter.svg');
+    background-repeat: no-repeat;
+    background-size: 517px 173px;
+    background-position: bottom right;
+}
+.footer__logo {
+    align-self: center;
+    width: 112px;
+    height: 112px;
+    object-fit: contain;
+    margin: 0 10px 13px 0;
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer__pointHeader {
+    text-align: left;
+    margin-bottom: 12px;
+    color: #292D32;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+.footer__pointHeaderCatalog {
+    letter-spacing: 0.5px;
+}
+.footer__point {
+    text-align: left;
+    margin-bottom: 7px;
+    color: #292D32;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.5px;
+}
+.footer__contactsList {
+    width: calc(100% - 28.5vw);
+    margin: 0;
+    padding: 35px 13.5vw 0 13.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    list-style: none;
+}
+.footer__contactsPoint {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+}
+.footer__contactsHeading {
+    text-align: left;
+    margin: 0;
+    color: #838383;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133.687%;
+}
+.footer__contactsTexts {
+    display: flex;
+}
+.footer__contactsText {
+    text-align: left;
+    margin: 0;
+    color: #292D32;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.2px;
+}
+.footer__contactsTextSpan {
+
+}
+.footer__contactsPointSocial {
+    align-self: center;
+    display: flex;
+    gap: 17px;
+}
+.footer__contactsSocialIcon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1400px) {
+    .footer {
+        padding: 30px 0 30px 0;
+    }
+    .footer__main {
+        width: calc(100% - 30px);
+        padding: 0 15px 0 15px;
+        gap: 20px;
+        margin: 0;
+        justify-content: space-between;
+    }
+    .footer__contactsList {
+        width: calc(100% - 30px);
+        padding: 31px 15px 0 15px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        background: #F2F2F2;
+    }
+    .footer__main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 98px min-content min-content;
+        gap: 0;
+        padding-bottom: 10px;
+        background: none;
+    }
+    .footer__logo {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 28px;
+        background: #F2F2F2;
+    }
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .footer__listCatalog {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+        display: block;
+        width: 100%;
+        height: 130px;
+        column-fill: balance;
+        column-count: 2;
+    }
+    .footer__listLk {
+        margin: 0 0 15px 8px;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    .footer__listHelp {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .footer__pointHeader {
+        font-size: 18px;
+    }
+    .footer__pointHeaderCatalog {
+        column-span: all;
+    }
+    .footer__point {
+        font-size: 15px;
+        line-height: 100%;
+        margin-bottom: 14px;
+    }
+    .footer__pointCatalog {
+        width: 70%;
+    }
+    .footer__contactsList {
+        flex-direction: column;
+        background-image: url('../../images/footer/bgFooterMobile.svg');
+        background-repeat: no-repeat;
+        background-position: 150px 205px;
+    }
+    .footer__contactsPoint {
+        gap: 0;
+    }
+    .footer__contactsHeading {
+        font-size: 15px;
+    }
+    .footer__contactsText {
+        font-size: 15px;
+        letter-spacing: 0.1px;
+    }
+    .footer__contactsPointSocial {
+        margin: 11px 0 0 1px;
+        align-self: flex-start;
+        gap: 30px;
+    }
+    .footer__contactsSocialIcon {
+        width: 30px;
+        height: 30px;
+    }
+}
