@@ -51,7 +51,8 @@ const Header = (props) => {
                     </li>
                 </ul>
             </div>
-            <dialog className="header__modal" open={isHoverLk}>
+            {/* <dialog className="header__modal" open={isHoverLk}> */}
+            <div className={`header__modal ${isHoverLk ? 'activeHeaderModal' : ''}`}>
                 <ul className="header__modalList">
                     <li className="header__modalPoint header__modalPointFirst">
                         <img className="header__modalAvatar" src={avatarDefault} alt='avatar'/>
@@ -62,7 +63,10 @@ const Header = (props) => {
                     <li className="header__modalPoint">Персональные предложения</li>
                     <li className="header__modalPoint">Выйти</li>
                 </ul>
-            </dialog>
+
+            </div>
+                
+            {/* </dialog> */}
         </header>
     );
   }
